@@ -1,0 +1,48 @@
+import SwiftUI
+
+struct ContentView: View {
+    @StateObject private var model = TimerModel()
+    @State private var showSettings = false
+
+    private var isCountUp: Bool {
+        if case .mode1(let s) = model.modeConfig, s.direction == .countUp { return true }
+        return false
+    }
+
+    var body: some View {
+        VStack(spacing: 0) {
+            SegmentBarView(
+                segmentCount: model.segmentCount,
+                isCountUp: isCountUp,
+                isBlinking: model.isBlinking,
+                phase: model.phase
+            )
+            .frame(height: 20)
+            .padding(.horizontal, 6)
+            .padding(.top, 6)
+
+            DigitalDisplayView(
+                remaining: model.remaining,
+                phase: model.phase,
+                isBlinking: model.isBlinking
+            )
+            .padding(.horizontal, 6)
+            .padding(.vertical, 4)
+
+            ControlButtonsView(model: model, showSettings: $showSettings)
+        }
+        .frame(width: 480, height: 80)
+        .background(TimerColors.background)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .popover(isPresented: $showSettings) {
+            ModeSettingsView(model: model, isPresented: $showSettings)
+        }
+        .onAppear {
+            NotificationManager.shared.requestAuthorization()
+        }
+    }
+}
+
+#Preview {
+    ContentView()
+}

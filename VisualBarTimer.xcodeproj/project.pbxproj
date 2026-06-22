@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006C8BA7CF566EFC0118D905 /* AlarmPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF09287EDB1CF40E23E360F4 /* AlarmPlayer.swift */; };
+		096725AFF58BFF928259A1AC /* TimerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A777BEE703E3B155860778BF /* TimerMode.swift */; };
+		16E105E7997C3F37BCF14618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6776EE2D0004FFC8FEBB2EF0 /* AppDelegate.swift */; };
+		173669A14D5D7CEF953B0E9D /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D312F648413A348F04325 /* NotificationManager.swift */; };
+		1F3A1E23025BE15A700B4CF0 /* TimerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06F731B8250FC2D7652E60 /* TimerColors.swift */; };
+		269757EDC08368A312651897 /* ControlButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448C8C287FE8A88B18D5B9EC /* ControlButtonsView.swift */; };
+		29DA7F5C0C35480431AB739C /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B5E063757068F3ABF4024 /* AppSettings.swift */; };
+		5F80267E15C5A1A02BDA648B /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FC65472F437E48343040D /* TimerModel.swift */; };
+		7084ABFB9E6F9ED6734372AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E57B30A5EB7E06BA6CA95 /* ContentView.swift */; };
+		731E72C5BE0D096F879D3DCF /* ModeSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C8914E23A9608164A076E /* ModeSettingsView.swift */; };
+		92880BF2D68F7B6995306FAF /* DigitalDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3162B5897442FAB5CA4B9D03 /* DigitalDisplayView.swift */; };
+		BA0A4BC83B83AFD9D1625765 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1E7CE886DC488F795C58E7 /* TimeFormatter.swift */; };
+		C83BF5A15E6DCE54F29A6E71 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26FA0E75A88881FB955E95 /* TimerState.swift */; };
+		CD951F80BD3CD8F5BCC1F58C /* SegmentBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE52CBCA6BB72CBE7FBE5E8 /* SegmentBarView.swift */; };
+		CFE00E047408A1A1184C40C2 /* VisualBarTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1F244F30FE1F95C89C2DFF /* VisualBarTimerApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D1E7CE886DC488F795C58E7 /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		286FC65472F437E48343040D /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		2F26FA0E75A88881FB955E95 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		3162B5897442FAB5CA4B9D03 /* DigitalDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalDisplayView.swift; sourceTree = "<group>"; };
+		448C8C287FE8A88B18D5B9EC /* ControlButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonsView.swift; sourceTree = "<group>"; };
+		5D8D312F648413A348F04325 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		6776EE2D0004FFC8FEBB2EF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		941E57B30A5EB7E06BA6CA95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9B1F244F30FE1F95C89C2DFF /* VisualBarTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualBarTimerApp.swift; sourceTree = "<group>"; };
+		9E1B5E063757068F3ABF4024 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		A777BEE703E3B155860778BF /* TimerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMode.swift; sourceTree = "<group>"; };
+		C07C8914E23A9608164A076E /* ModeSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSettingsView.swift; sourceTree = "<group>"; };
+		CA06F731B8250FC2D7652E60 /* TimerColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerColors.swift; sourceTree = "<group>"; };
+		CAE52CBCA6BB72CBE7FBE5E8 /* SegmentBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentBarView.swift; sourceTree = "<group>"; };
+		EF09287EDB1CF40E23E360F4 /* AlarmPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPlayer.swift; sourceTree = "<group>"; };
+		F4475B0421A4B9900F9C32CC /* VisualBarTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualBarTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		09E9B5D68E638A72D2831875 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				5D8D312F648413A348F04325 /* NotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		15F32E9898D519359666E66B = {
+			isa = PBXGroup;
+			children = (
+				167D362B46694FDDF37584E5 /* VisualBarTimer */,
+				D1DDD6D9D17177B5758CE225 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		164C6AC95255E05A08ADE0E7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0D1E7CE886DC488F795C58E7 /* TimeFormatter.swift */,
+				CA06F731B8250FC2D7652E60 /* TimerColors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		167D362B46694FDDF37584E5 /* VisualBarTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C2E5D73A5997C1AA5C526AA9 /* App */,
+				A45C29B2F9C33382323BE3EB /* Audio */,
+				9FFDB268427CDF069A9B832A /* Models */,
+				09E9B5D68E638A72D2831875 /* Notifications */,
+				164C6AC95255E05A08ADE0E7 /* Utilities */,
+				BB1B4E12C8BB051457206DC8 /* Views */,
+			);
+			path = VisualBarTimer;
+			sourceTree = "<group>";
+		};
+		9FFDB268427CDF069A9B832A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E1B5E063757068F3ABF4024 /* AppSettings.swift */,
+				A777BEE703E3B155860778BF /* TimerMode.swift */,
+				286FC65472F437E48343040D /* TimerModel.swift */,
+				2F26FA0E75A88881FB955E95 /* TimerState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A45C29B2F9C33382323BE3EB /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				EF09287EDB1CF40E23E360F4 /* AlarmPlayer.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		BB1B4E12C8BB051457206DC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				941E57B30A5EB7E06BA6CA95 /* ContentView.swift */,
+				448C8C287FE8A88B18D5B9EC /* ControlButtonsView.swift */,
+				3162B5897442FAB5CA4B9D03 /* DigitalDisplayView.swift */,
+				C07C8914E23A9608164A076E /* ModeSettingsView.swift */,
+				CAE52CBCA6BB72CBE7FBE5E8 /* SegmentBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2E5D73A5997C1AA5C526AA9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6776EE2D0004FFC8FEBB2EF0 /* AppDelegate.swift */,
+				9B1F244F30FE1F95C89C2DFF /* VisualBarTimerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D1DDD6D9D17177B5758CE225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4475B0421A4B9900F9C32CC /* VisualBarTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63A06193DFF04835ED1941FF /* VisualBarTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3568BF0BB4C01002B83F74E /* Build configuration list for PBXNativeTarget "VisualBarTimer" */;
+			buildPhases = (
+				969641407701851540E6229F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisualBarTimer;
+			packageProductDependencies = (
+			);
+			productName = VisualBarTimer;
+			productReference = F4475B0421A4B9900F9C32CC /* VisualBarTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		380DCE9047C6AF386DAAAB20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					63A06193DFF04835ED1941FF = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B6274E0AC40CA89F892051D2 /* Build configuration list for PBXProject "VisualBarTimer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 15F32E9898D519359666E66B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D1DDD6D9D17177B5758CE225 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63A06193DFF04835ED1941FF /* VisualBarTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		969641407701851540E6229F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006C8BA7CF566EFC0118D905 /* AlarmPlayer.swift in Sources */,
+				16E105E7997C3F37BCF14618 /* AppDelegate.swift in Sources */,
+				29DA7F5C0C35480431AB739C /* AppSettings.swift in Sources */,
+				7084ABFB9E6F9ED6734372AB /* ContentView.swift in Sources */,
+				269757EDC08368A312651897 /* ControlButtonsView.swift in Sources */,
+				92880BF2D68F7B6995306FAF /* DigitalDisplayView.swift in Sources */,
+				731E72C5BE0D096F879D3DCF /* ModeSettingsView.swift in Sources */,
+				173669A14D5D7CEF953B0E9D /* NotificationManager.swift in Sources */,
+				CD951F80BD3CD8F5BCC1F58C /* SegmentBarView.swift in Sources */,
+				BA0A4BC83B83AFD9D1625765 /* TimeFormatter.swift in Sources */,
+				1F3A1E23025BE15A700B4CF0 /* TimerColors.swift in Sources */,
+				096725AFF58BFF928259A1AC /* TimerMode.swift in Sources */,
+				5F80267E15C5A1A02BDA648B /* TimerModel.swift in Sources */,
+				C83BF5A15E6DCE54F29A6E71 /* TimerState.swift in Sources */,
+				CFE00E047408A1A1184C40C2 /* VisualBarTimerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		008D29B08752F695CFDC8177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		86197681C1117210050E23BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = VisualBarTimer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinespark.VisualBarTimer;
+				PRODUCT_NAME = "Visual Bar Timer";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		B184CC8F7E5612541F34C001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = VisualBarTimer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinespark.VisualBarTimer;
+				PRODUCT_NAME = "Visual Bar Timer";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		D097076065CB8902C021FB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3568BF0BB4C01002B83F74E /* Build configuration list for PBXNativeTarget "VisualBarTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86197681C1117210050E23BA /* Debug */,
+				B184CC8F7E5612541F34C001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B6274E0AC40CA89F892051D2 /* Build configuration list for PBXProject "VisualBarTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008D29B08752F695CFDC8177 /* Debug */,
+				D097076065CB8902C021FB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 380DCE9047C6AF386DAAAB20 /* Project object */;
+}
