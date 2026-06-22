@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		123D24684BCAF66CFD60BD71 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3C7FA68485D82044B2B97 /* AppSettings.swift */; };
+		1C4B7A253AF42A65E36B932F /* ControlButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1BDC6E5F4724FC1699F79A /* ControlButtonsView.swift */; };
+		2C68330855E3E795977E7820 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D98C19DB806FFD38B6B42 /* NotificationManager.swift */; };
+		4E66EEC58576AB71702C99C7 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904526C34894657B92E817F1 /* TimeFormatter.swift */; };
+		5F72DA23DEC7BF945CA4AE4E /* TimerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09639896066113ADBB2139D2 /* TimerMode.swift */; };
+		61696C1A0751AE9244851138 /* DigitalDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BC09E05FF1F05E6E026DFC /* DigitalDisplayView.swift */; };
+		61FE733F36160543EB0FB003 /* AlarmPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D4CF891BE89A1A60687D /* AlarmPlayer.swift */; };
+		A2F64610FF4DB00699BF97C5 /* ModeSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF1CC0519251447C74BF21 /* ModeSettingsView.swift */; };
+		B05026FBC270DEE6316D9BC7 /* TimerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2011FB6A7DB856F5D51FD9 /* TimerColors.swift */; };
+		B46F474AD1CD86AEAC437DDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5AF0E97A7DB636C7DBAB13 /* ContentView.swift */; };
+		B5C5F5B7974F0BDC3CE4346E /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C96B04D689FDD1D5368E97 /* TimerState.swift */; };
+		D08D3EEFDA791B5DEAEDDA76 /* VisualTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DB52E01E4210476AE7BD09 /* VisualTimerApp.swift */; };
+		E9C1D5B277B14D1A9A40F81A /* SegmentBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E1780109277182FC0A08CD /* SegmentBarView.swift */; };
+		EAFFA5F41CB6750C6FAF3CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90B3DC4A1586505950C760F /* AppDelegate.swift */; };
+		F2FE3B74BAD88CAB09F2A67B /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47E6582229BA0773874909 /* TimerModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08F0B245EEA3DE6056B0A857 /* VisualTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09639896066113ADBB2139D2 /* TimerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMode.swift; sourceTree = "<group>"; };
+		0A1BDC6E5F4724FC1699F79A /* ControlButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonsView.swift; sourceTree = "<group>"; };
+		0E2011FB6A7DB856F5D51FD9 /* TimerColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerColors.swift; sourceTree = "<group>"; };
+		11FF1CC0519251447C74BF21 /* ModeSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSettingsView.swift; sourceTree = "<group>"; };
+		22D3C7FA68485D82044B2B97 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		278D98C19DB806FFD38B6B42 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		50DB52E01E4210476AE7BD09 /* VisualTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualTimerApp.swift; sourceTree = "<group>"; };
+		52D6D4CF891BE89A1A60687D /* AlarmPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPlayer.swift; sourceTree = "<group>"; };
+		904526C34894657B92E817F1 /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		AA47E6582229BA0773874909 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		B9BC09E05FF1F05E6E026DFC /* DigitalDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalDisplayView.swift; sourceTree = "<group>"; };
+		C5E1780109277182FC0A08CD /* SegmentBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentBarView.swift; sourceTree = "<group>"; };
+		D90B3DC4A1586505950C760F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0C96B04D689FDD1D5368E97 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		FE5AF0E97A7DB636C7DBAB13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3E77D62DE113686BAC2AA964 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				278D98C19DB806FFD38B6B42 /* NotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		4FDA980E5BBBFF721618187B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22D3C7FA68485D82044B2B97 /* AppSettings.swift */,
+				09639896066113ADBB2139D2 /* TimerMode.swift */,
+				AA47E6582229BA0773874909 /* TimerModel.swift */,
+				F0C96B04D689FDD1D5368E97 /* TimerState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		720EE86719E22E67044B2BEE = {
+			isa = PBXGroup;
+			children = (
+				826DD0DE1539BADC47BF96D9 /* VisualTimer */,
+				9216DC9B38D4EAE3F2F66510 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		826DD0DE1539BADC47BF96D9 /* VisualTimer */ = {
+			isa = PBXGroup;
+			children = (
+				DF67A2E8AF3428238F5EFA2D /* App */,
+				B9895ACC6683405E6CF3B5FD /* Audio */,
+				4FDA980E5BBBFF721618187B /* Models */,
+				3E77D62DE113686BAC2AA964 /* Notifications */,
+				DBCC5D3ED897B82FE4D182E4 /* Utilities */,
+				E5801CBEFB3AC8326F1E630C /* Views */,
+			);
+			path = VisualTimer;
+			sourceTree = "<group>";
+		};
+		9216DC9B38D4EAE3F2F66510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08F0B245EEA3DE6056B0A857 /* VisualTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9895ACC6683405E6CF3B5FD /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				52D6D4CF891BE89A1A60687D /* AlarmPlayer.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		DBCC5D3ED897B82FE4D182E4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				904526C34894657B92E817F1 /* TimeFormatter.swift */,
+				0E2011FB6A7DB856F5D51FD9 /* TimerColors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DF67A2E8AF3428238F5EFA2D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D90B3DC4A1586505950C760F /* AppDelegate.swift */,
+				50DB52E01E4210476AE7BD09 /* VisualTimerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E5801CBEFB3AC8326F1E630C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE5AF0E97A7DB636C7DBAB13 /* ContentView.swift */,
+				0A1BDC6E5F4724FC1699F79A /* ControlButtonsView.swift */,
+				B9BC09E05FF1F05E6E026DFC /* DigitalDisplayView.swift */,
+				11FF1CC0519251447C74BF21 /* ModeSettingsView.swift */,
+				C5E1780109277182FC0A08CD /* SegmentBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55A8CF0B2E000D128835709E /* VisualTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C2F476515720CACAED67C8 /* Build configuration list for PBXNativeTarget "VisualTimer" */;
+			buildPhases = (
+				ED17A29E07A29E727C0992F8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisualTimer;
+			packageProductDependencies = (
+			);
+			productName = VisualTimer;
+			productReference = 08F0B245EEA3DE6056B0A857 /* VisualTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F7941CA8D05A325150045D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					55A8CF0B2E000D128835709E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 47893788BF3C72589BA6F007 /* Build configuration list for PBXProject "VisualTimer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 720EE86719E22E67044B2BEE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9216DC9B38D4EAE3F2F66510 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55A8CF0B2E000D128835709E /* VisualTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED17A29E07A29E727C0992F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FE733F36160543EB0FB003 /* AlarmPlayer.swift in Sources */,
+				EAFFA5F41CB6750C6FAF3CC6 /* AppDelegate.swift in Sources */,
+				123D24684BCAF66CFD60BD71 /* AppSettings.swift in Sources */,
+				B46F474AD1CD86AEAC437DDE /* ContentView.swift in Sources */,
+				1C4B7A253AF42A65E36B932F /* ControlButtonsView.swift in Sources */,
+				61696C1A0751AE9244851138 /* DigitalDisplayView.swift in Sources */,
+				A2F64610FF4DB00699BF97C5 /* ModeSettingsView.swift in Sources */,
+				2C68330855E3E795977E7820 /* NotificationManager.swift in Sources */,
+				E9C1D5B277B14D1A9A40F81A /* SegmentBarView.swift in Sources */,
+				4E66EEC58576AB71702C99C7 /* TimeFormatter.swift in Sources */,
+				B05026FBC270DEE6316D9BC7 /* TimerColors.swift in Sources */,
+				5F72DA23DEC7BF945CA4AE4E /* TimerMode.swift in Sources */,
+				F2FE3B74BAD88CAB09F2A67B /* TimerModel.swift in Sources */,
+				B5C5F5B7974F0BDC3CE4346E /* TimerState.swift in Sources */,
+				D08D3EEFDA791B5DEAEDDA76 /* VisualTimerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		008A14BCE559056C684F68A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = VisualTimer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinespark.VisualTimer;
+				PRODUCT_NAME = VisualTimer;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		8B5B8F843DAFBCC67660C1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AAC3F723D9494228059C8AF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EA510747631CDDCC47AF0DCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = VisualTimer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinespark.VisualTimer;
+				PRODUCT_NAME = VisualTimer;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47893788BF3C72589BA6F007 /* Build configuration list for PBXProject "VisualTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B5B8F843DAFBCC67660C1AB /* Debug */,
+				AAC3F723D9494228059C8AF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		84C2F476515720CACAED67C8 /* Build configuration list for PBXNativeTarget "VisualTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA510747631CDDCC47AF0DCE /* Debug */,
+				008A14BCE559056C684F68A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F7941CA8D05A325150045D6 /* Project object */;
+}

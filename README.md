@@ -1,1 +1,1 @@
-# visual-bar-timer
+# VisualTimer

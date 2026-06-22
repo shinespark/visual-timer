@@ -2,7 +2,7 @@ import SwiftUI
 import AppKit
 
 @main
-struct VisualBarTimerApp: App {
+struct VisualTimerApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
