@@ -31,7 +31,7 @@ struct ContentView: View {
 
             ControlButtonsView(model: model, showSettings: $showSettings)
         }
-        .frame(width: 480, height: 80)
+        .frame(width: 480, height: 120)
         .background(TimerColors.background)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .popover(isPresented: $showSettings) {
