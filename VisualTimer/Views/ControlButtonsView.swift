@@ -28,7 +28,7 @@ struct ControlButtonsView: View {
             Text(model.modeConfig.displayName)
                 .font(.system(size: 11, weight: .bold, design: .monospaced))
                 .foregroundColor(modeColor)
-                .frame(width: 24)
+                .frame(width: 52)
 
             if case .mode2 = model.modeConfig {
                 Text(model.repeatPhase == .work ? "作業" : "休憩")

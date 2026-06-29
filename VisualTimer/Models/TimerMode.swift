@@ -22,8 +22,8 @@ enum TimerModeConfig {
 
     var displayName: String {
         switch self {
-        case .mode1: return "M1"
-        case .mode2: return "M2"
+        case .mode1: return "タイマー"
+        case .mode2: return "ポモドーロ"
         }
     }
 }

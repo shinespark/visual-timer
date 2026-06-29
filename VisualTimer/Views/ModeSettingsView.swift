@@ -21,8 +21,8 @@ struct ModeSettingsView: View {
                 .foregroundColor(.white)
 
             Picker("モード", selection: $selectedMode) {
-                Text("通常計測 (M1)").tag(0)
-                Text("リピート (M2)").tag(1)
+                Text("タイマー").tag(0)
+                Text("ポモドーロ").tag(1)
             }
             .pickerStyle(.segmented)
 
