@@ -3,13 +3,16 @@ import SwiftUI
 struct ControlButtonsView: View {
     @ObservedObject var model: TimerModel
     @Binding var showSettings: Bool
+    @State private var volume: Double = AlarmPlayer.shared.volumeLevel
+    @State private var showVolume: Bool = false
 
     var body: some View {
         HStack(spacing: 10) {
             // Start/Pause/Resume
             Button(action: { model.togglePauseResume() }) {
                 Image(systemName: startButtonIcon)
-                    .frame(width: 18, height: 18)
+                    .font(.system(size: 26))
+                    .frame(width: 48, height: 48)
             }
             .keyboardShortcut(.return, modifiers: [])
             .help(startButtonLabel)
@@ -17,7 +20,8 @@ struct ControlButtonsView: View {
             // Reset
             Button(action: { model.reset() }) {
                 Image(systemName: "stop.fill")
-                    .frame(width: 18, height: 18)
+                    .font(.system(size: 26))
+                    .frame(width: 48, height: 48)
             }
             .keyboardShortcut("r", modifiers: [])
             .help("リセット")
@@ -28,7 +32,7 @@ struct ControlButtonsView: View {
             Text(model.modeConfig.displayName)
                 .font(.system(size: 11, weight: .bold, design: .monospaced))
                 .foregroundColor(modeColor)
-                .frame(width: 24)
+                .frame(width: 52)
 
             if case .mode2 = model.modeConfig {
                 Text(model.repeatPhase == .work ? "作業" : "休憩")
@@ -41,22 +45,38 @@ struct ControlButtonsView: View {
             // Settings
             Button(action: { showSettings = true }) {
                 Image(systemName: "gearshape")
-                    .frame(width: 18, height: 18)
+                    .font(.system(size: 26))
+                    .frame(width: 48, height: 48)
             }
             .help("設定")
             .disabled(model.phase == .running)
 
             // Volume
-            Button(action: { cycleVolume() }) {
-                Image(systemName: volumeIcon)
-                    .frame(width: 18, height: 18)
+            Button(action: { showVolume.toggle() }) {
+                Image(systemName: volume == 0 ? "speaker.slash.fill" : "speaker.wave.3.fill")
+                    .font(.system(size: 26))
+                    .frame(width: 48, height: 48)
             }
-            .help("音量: \(volumeLabel)")
+            .help("音量")
+            .popover(isPresented: $showVolume, arrowEdge: .bottom) {
+                HStack(spacing: 8) {
+                    Image(systemName: "speaker.fill")
+                        .foregroundColor(.secondary)
+                    Slider(value: $volume, in: 0...1)
+                        .frame(width: 120)
+                    Image(systemName: "speaker.wave.3.fill")
+                        .foregroundColor(.secondary)
+                }
+                .padding(12)
+                .onChange(of: volume) { newValue in
+                    model.alarmPlayer.volumeLevel = newValue
+                }
+            }
         }
         .buttonStyle(.plain)
         .foregroundColor(.white)
         .padding(.horizontal, 8)
-        .frame(height: 28)
+        .frame(height: 64)
     }
 
     private var startButtonIcon: String {
@@ -86,25 +106,5 @@ struct ControlButtonsView: View {
                 : Color(red: 0.3, green: 0.6, blue: 0.9)
         }
         return .secondary
-    }
-
-    private var volumeIcon: String {
-        switch model.alarmPlayer.volumeLevel {
-        case 0: return "speaker.slash.fill"
-        case 1: return "speaker.wave.1.fill"
-        default: return "speaker.wave.3.fill"
-        }
-    }
-
-    private var volumeLabel: String {
-        switch model.alarmPlayer.volumeLevel {
-        case 0: return "消音"
-        case 1: return "小"
-        default: return "大"
-        }
-    }
-
-    private func cycleVolume() {
-        model.alarmPlayer.volumeLevel = (model.alarmPlayer.volumeLevel + 1) % 3
     }
 }

@@ -49,8 +49,8 @@ final class AppSettings {
         set { defaults.set(newValue, forKey: Key.mode2RepeatCount) }
     }
 
-    var volumeLevel: Int {
-        get { defaults.object(forKey: Key.volumeLevel) as? Int ?? 2 }
+    var volumeLevel: Double {
+        get { defaults.object(forKey: Key.volumeLevel) as? Double ?? 1.0 }
         set { defaults.set(newValue, forKey: Key.volumeLevel) }
     }
 

@@ -31,7 +31,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func configureWindow(_ window: NSWindow) {
-        window.styleMask = [.borderless, .resizable]
+        window.styleMask = [.titled, .closable, .miniaturizable, .resizable]
         window.isMovableByWindowBackground = true
         window.backgroundColor = NSColor(red: 0.11, green: 0.11, blue: 0.12, alpha: 1.0)
         window.isOpaque = true
