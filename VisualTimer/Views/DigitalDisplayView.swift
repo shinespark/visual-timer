@@ -17,11 +17,10 @@ struct DigitalDisplayView: View {
 
     var body: some View {
         Text(displayText)
-            .font(.system(size: 22, weight: .medium, design: .monospaced))
+            .font(.system(size: 40, weight: .medium, design: .monospaced))
             .foregroundColor(foregroundColor)
             .opacity(textOpacity)
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 2)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(TimerColors.displayBackground)
     }
 

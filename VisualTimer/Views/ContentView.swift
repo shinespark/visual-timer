@@ -11,27 +11,28 @@ struct ContentView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            SegmentBarView(
-                segmentCount: model.segmentCount,
-                isCountUp: isCountUp,
-                isBlinking: model.isBlinking,
-                phase: model.phase
-            )
+            HStack(spacing: 6) {
+                SegmentBarView(
+                    segmentCount: model.segmentCount,
+                    isCountUp: isCountUp,
+                    isBlinking: model.isBlinking,
+                    phase: model.phase
+                )
+
+                DigitalDisplayView(
+                    remaining: model.remaining,
+                    phase: model.phase,
+                    isBlinking: model.isBlinking
+                )
+                .frame(width: 150)
+            }
             .frame(height: 60)
             .padding(.horizontal, 6)
             .padding(.top, 8)
 
-            DigitalDisplayView(
-                remaining: model.remaining,
-                phase: model.phase,
-                isBlinking: model.isBlinking
-            )
-            .padding(.horizontal, 6)
-            .padding(.vertical, 4)
-
             ControlButtonsView(model: model, showSettings: $showSettings)
         }
-        .frame(width: 480, height: 160)
+        .frame(width: 480, height: 148)
         .background(TimerColors.background)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .popover(isPresented: $showSettings) {
