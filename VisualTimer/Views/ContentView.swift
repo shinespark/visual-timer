@@ -27,7 +27,7 @@ struct ContentView: View {
                 .frame(width: 150)
             }
             .frame(height: 60)
-            .padding(.horizontal, 6)
+            .padding(.horizontal, 16)
             .padding(.top, 8)
 
             ControlButtonsView(model: model, showSettings: $showSettings)
