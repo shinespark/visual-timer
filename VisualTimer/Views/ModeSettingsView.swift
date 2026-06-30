@@ -80,18 +80,18 @@ struct ModeSettingsView: View {
         VStack(spacing: 4) {
             HStack(spacing: 8) {
                 Text("分").foregroundColor(.secondary).frame(width: 16)
-                KnoblessSlider(
+                Slider(
                     value: Binding(get: { Double(minutes.wrappedValue) }, set: { minutes.wrappedValue = Int($0) }),
-                    range: 0...Double(maxMinutes),
+                    in: 0...Double(maxMinutes),
                     step: 1
                 )
                 Text("\(minutes.wrappedValue)分").foregroundColor(.white).frame(width: 48, alignment: .trailing)
             }
             HStack(spacing: 8) {
                 Text("秒").foregroundColor(.secondary).frame(width: 16)
-                KnoblessSlider(
+                Slider(
                     value: Binding(get: { Double(seconds.wrappedValue) }, set: { seconds.wrappedValue = Int($0) }),
-                    range: 0...59,
+                    in: 0...59,
                     step: 1
                 )
                 Text("\(seconds.wrappedValue)秒").foregroundColor(.white).frame(width: 48, alignment: .trailing)
