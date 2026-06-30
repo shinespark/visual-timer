@@ -17,9 +17,9 @@ struct ContentView: View {
                 isBlinking: model.isBlinking,
                 phase: model.phase
             )
-            .frame(height: 20)
+            .frame(height: 60)
             .padding(.horizontal, 6)
-            .padding(.top, 6)
+            .padding(.top, 8)
 
             DigitalDisplayView(
                 remaining: model.remaining,
@@ -31,7 +31,7 @@ struct ContentView: View {
 
             ControlButtonsView(model: model, showSettings: $showSettings)
         }
-        .frame(width: 480, height: 120)
+        .frame(width: 480, height: 160)
         .background(TimerColors.background)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .popover(isPresented: $showSettings) {
