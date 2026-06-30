@@ -9,6 +9,15 @@ struct ContentView: View {
         return false
     }
 
+    private var windowTitle: String {
+        switch model.modeConfig {
+        case .mode1:
+            return "VisualTimer - タイマー"
+        case .mode2:
+            return "VisualTimer - ポモドーロ - \(model.repeatPhase == .work ? "作業" : "休憩")"
+        }
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 6) {
@@ -40,6 +49,12 @@ struct ContentView: View {
         }
         .onAppear {
             NotificationManager.shared.requestAuthorization()
+            DispatchQueue.main.async {
+                NSApp.windows.first?.title = windowTitle
+            }
+        }
+        .onChange(of: windowTitle) { newTitle in
+            NSApp.windows.first?.title = newTitle
         }
     }
 }
