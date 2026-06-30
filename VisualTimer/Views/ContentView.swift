@@ -9,29 +9,39 @@ struct ContentView: View {
         return false
     }
 
+    private var windowTitle: String {
+        switch model.modeConfig {
+        case .mode1:
+            return "VisualTimer - タイマー"
+        case .mode2:
+            return "VisualTimer - ポモドーロ - \(model.repeatPhase == .work ? "作業" : "休憩")"
+        }
+    }
+
     var body: some View {
         VStack(spacing: 0) {
-            SegmentBarView(
-                segmentCount: model.segmentCount,
-                isCountUp: isCountUp,
-                isBlinking: model.isBlinking,
-                phase: model.phase
-            )
-            .frame(height: 20)
-            .padding(.horizontal, 6)
-            .padding(.top, 6)
+            HStack(spacing: 6) {
+                SegmentBarView(
+                    segmentCount: model.segmentCount,
+                    isCountUp: isCountUp,
+                    isBlinking: model.isBlinking,
+                    phase: model.phase
+                )
 
-            DigitalDisplayView(
-                remaining: model.remaining,
-                phase: model.phase,
-                isBlinking: model.isBlinking
-            )
-            .padding(.horizontal, 6)
-            .padding(.vertical, 4)
+                DigitalDisplayView(
+                    remaining: model.remaining,
+                    phase: model.phase,
+                    isBlinking: model.isBlinking
+                )
+                .frame(width: 150)
+            }
+            .frame(height: 60)
+            .padding(.horizontal, 16)
+            .padding(.top, 8)
 
             ControlButtonsView(model: model, showSettings: $showSettings)
         }
-        .frame(width: 480, height: 120)
+        .frame(width: 480, height: 148)
         .background(TimerColors.background)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .popover(isPresented: $showSettings) {
@@ -39,6 +49,12 @@ struct ContentView: View {
         }
         .onAppear {
             NotificationManager.shared.requestAuthorization()
+            DispatchQueue.main.async {
+                NSApp.windows.first?.title = windowTitle
+            }
+        }
+        .onChange(of: windowTitle) { newTitle in
+            NSApp.windows.first?.title = newTitle
         }
     }
 }

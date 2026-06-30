@@ -7,7 +7,7 @@ struct SegmentBarView: View {
     let phase: TimerPhase
 
     private let totalSegments = 20
-    private let spacing: CGFloat = 2
+    private let spacing: CGFloat = 3
 
     var body: some View {
         GeometryReader { geo in
@@ -29,7 +29,7 @@ struct SegmentBarView: View {
             return 1.0
         }()
 
-        RoundedRectangle(cornerRadius: 2)
+        RoundedRectangle(cornerRadius: 3)
             .fill(color.opacity(lit ? blinkOpacity : TimerColors.dimOpacity))
             .frame(width: width, height: height)
     }

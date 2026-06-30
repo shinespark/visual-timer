@@ -28,20 +28,6 @@ struct ControlButtonsView: View {
 
             Spacer()
 
-            // Mode label
-            Text(model.modeConfig.displayName)
-                .font(.system(size: 11, weight: .bold, design: .monospaced))
-                .foregroundColor(modeColor)
-                .frame(width: 52)
-
-            if case .mode2 = model.modeConfig {
-                Text(model.repeatPhase == .work ? "作業" : "休憩")
-                    .font(.system(size: 10))
-                    .foregroundColor(.secondary)
-            }
-
-            Spacer()
-
             // Settings
             Button(action: { showSettings = true }) {
                 Image(systemName: "gearshape")
@@ -99,12 +85,4 @@ struct ControlButtonsView: View {
         }
     }
 
-    private var modeColor: Color {
-        if case .mode2 = model.modeConfig {
-            return model.repeatPhase == .work
-                ? Color(red: 0.3, green: 0.8, blue: 0.3)
-                : Color(red: 0.3, green: 0.6, blue: 0.9)
-        }
-        return .secondary
-    }
 }
