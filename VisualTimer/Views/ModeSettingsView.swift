@@ -56,23 +56,17 @@ struct ModeSettingsView: View {
             .pickerStyle(.radioGroup)
             .foregroundColor(.white)
 
-            HStack {
-                Text("時間:").foregroundColor(.white)
-                durationPicker(minutes: $mode1Minutes, seconds: $mode1Seconds, max: 199)
-            }
+            Text("時間:").foregroundColor(.white)
+            durationPicker(minutes: $mode1Minutes, seconds: $mode1Seconds, maxMinutes: 199)
         }
     }
 
     private var mode2Settings: some View {
         VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Text("作業:").foregroundColor(.white)
-                durationPicker(minutes: $workMinutes, seconds: $workSeconds, max: 199)
-            }
-            HStack {
-                Text("休憩:").foregroundColor(.white)
-                durationPicker(minutes: $restMinutes, seconds: $restSeconds, max: 199)
-            }
+            Text("作業:").foregroundColor(.white)
+            durationPicker(minutes: $workMinutes, seconds: $workSeconds, maxMinutes: 199)
+            Text("休憩:").foregroundColor(.white)
+            durationPicker(minutes: $restMinutes, seconds: $restSeconds, maxMinutes: 199)
             HStack {
                 Text("繰り返し:").foregroundColor(.white)
                 Stepper("\(repeatCount == 0 ? "無限" : "\(repeatCount)回")",
@@ -82,15 +76,26 @@ struct ModeSettingsView: View {
         }
     }
 
-    @ViewBuilder
-    private func durationPicker(minutes: Binding<Int>, seconds: Binding<Int>, max: Int) -> some View {
-        HStack(spacing: 4) {
-            Stepper("", value: minutes, in: 0...max)
-                .labelsHidden()
-            Text("\(minutes.wrappedValue)分").foregroundColor(.white).frame(width: 40)
-            Stepper("", value: seconds, in: 0...59)
-                .labelsHidden()
-            Text("\(seconds.wrappedValue)秒").foregroundColor(.white).frame(width: 40)
+    private func durationPicker(minutes: Binding<Int>, seconds: Binding<Int>, maxMinutes: Int) -> some View {
+        VStack(spacing: 4) {
+            HStack(spacing: 8) {
+                Text("分").foregroundColor(.secondary).frame(width: 16)
+                KnoblessSlider(
+                    value: Binding(get: { Double(minutes.wrappedValue) }, set: { minutes.wrappedValue = Int($0) }),
+                    range: 0...Double(maxMinutes),
+                    step: 1
+                )
+                Text("\(minutes.wrappedValue)分").foregroundColor(.white).frame(width: 48, alignment: .trailing)
+            }
+            HStack(spacing: 8) {
+                Text("秒").foregroundColor(.secondary).frame(width: 16)
+                KnoblessSlider(
+                    value: Binding(get: { Double(seconds.wrappedValue) }, set: { seconds.wrappedValue = Int($0) }),
+                    range: 0...59,
+                    step: 1
+                )
+                Text("\(seconds.wrappedValue)秒").foregroundColor(.white).frame(width: 48, alignment: .trailing)
+            }
         }
     }
 
