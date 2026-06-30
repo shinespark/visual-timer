@@ -137,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C2F476515720CACAED67C8 /* Build configuration list for PBXNativeTarget "VisualTimer" */;
 			buildPhases = (
+				40E06C329FDB63570113F016 /* Copy Fonts */,
 				ED17A29E07A29E727C0992F8 /* Sources */,
 			);
 			buildRules = (
@@ -183,6 +184,27 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40E06C329FDB63570113F016 /* Copy Fonts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Fonts";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/Fonts\"\ncp \"${SRCROOT}/VisualTimer/Resources/Fonts/DSEG7Classic-Bold.ttf\" \\\n   \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/Fonts/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED17A29E07A29E727C0992F8 /* Sources */ = {

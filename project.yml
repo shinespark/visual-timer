@@ -15,6 +15,12 @@ targets:
           - "Resources/**"
     resources:
       - VisualTimer/Resources
+    preBuildScripts:
+      - name: Copy Fonts
+        script: |
+          mkdir -p "${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/Fonts"
+          cp "${SRCROOT}/VisualTimer/Resources/Fonts/DSEG7Classic-Bold.ttf" \
+             "${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources/Fonts/"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.shinespark.VisualTimer
