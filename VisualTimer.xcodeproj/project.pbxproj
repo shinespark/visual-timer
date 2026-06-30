@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA01BB02CC03DD04EE05FF07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA01BB02CC03DD04EE05FF06 /* Assets.xcassets */; };
 		123D24684BCAF66CFD60BD71 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3C7FA68485D82044B2B97 /* AppSettings.swift */; };
 		1C4B7A253AF42A65E36B932F /* ControlButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1BDC6E5F4724FC1699F79A /* ControlButtonsView.swift */; };
 		2C68330855E3E795977E7820 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278D98C19DB806FFD38B6B42 /* NotificationManager.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA01BB02CC03DD04EE05FF06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08F0B245EEA3DE6056B0A857 /* VisualTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09639896066113ADBB2139D2 /* TimerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMode.swift; sourceTree = "<group>"; };
 		0A1BDC6E5F4724FC1699F79A /* ControlButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonsView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			);
 			sourceTree = "<group>";
 		};
+		AA01BB02CC03DD04EE05FF09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA01BB02CC03DD04EE05FF06 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		826DD0DE1539BADC47BF96D9 /* VisualTimer */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 				B9895ACC6683405E6CF3B5FD /* Audio */,
 				4FDA980E5BBBFF721618187B /* Models */,
 				3E77D62DE113686BAC2AA964 /* Notifications */,
+				AA01BB02CC03DD04EE05FF09 /* Resources */,
 				DBCC5D3ED897B82FE4D182E4 /* Utilities */,
 				E5801CBEFB3AC8326F1E630C /* Views */,
 			);
@@ -141,6 +152,7 @@
 			buildConfigurationList = 84C2F476515720CACAED67C8 /* Build configuration list for PBXNativeTarget "VisualTimer" */;
 			buildPhases = (
 				40E06C329FDB63570113F016 /* Copy Fonts */,
+				AA01BB02CC03DD04EE05FF08 /* Resources */,
 				ED17A29E07A29E727C0992F8 /* Sources */,
 			);
 			buildRules = (
@@ -187,6 +199,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA01BB02CC03DD04EE05FF08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA01BB02CC03DD04EE05FF07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		40E06C329FDB63570113F016 /* Copy Fonts */ = {
