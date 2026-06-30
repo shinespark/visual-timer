@@ -13,8 +13,7 @@ targets:
       - path: VisualTimer
         excludes:
           - "Resources/**"
-    resources:
-      - VisualTimer/Resources
+      - path: VisualTimer/Resources/Assets.xcassets
     preBuildScripts:
       - name: Copy Fonts
         script: |
