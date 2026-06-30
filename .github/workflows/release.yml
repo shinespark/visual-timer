@@ -42,6 +42,8 @@ jobs:
             -configuration Release \
             -archivePath ./build/VisualTimer.xcarchive \
             DEVELOPMENT_TEAM=${{ secrets.APPLE_TEAM_ID }} \
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="Developer ID Application" \
             archive
 
       - name: Export App
